@@ -12,7 +12,3 @@ public class OrderProcessedConsumer : IConsumer<OrderProcessed>
         return Task.CompletedTask;
     }
 }
-
-public class OrderProcessedConsumerDefinition : ConsumerDefinition<OrderProcessedConsumer>
-{
-}

@@ -13,7 +13,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddMassTransit(x =>
 {
     x.AddConsumer<ProcessOrderConsumer>();
-    x.AddConsumer<OrderProcessedConsumer, OrderProcessedConsumerDefinition>()
+    x.AddConsumer<OrderProcessedConsumer>()
         .Endpoint(e =>
         {
             e.Name = $"OrderProcessedConsumer-ApplicationA";
